@@ -1,7 +1,13 @@
 {
   "compilerOptions": {
+    // ...
     "paths": {
-      "@/*": ["./src/*"]
+      // A new catch-all that replaces the baseUrl:
+      "*": ["."],
+
+      // Every other path now has an explicit common prefix:
+      "@/*": ["./src/*"],
+      
     }
   }
 }
