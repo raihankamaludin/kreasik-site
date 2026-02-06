@@ -11,7 +11,10 @@ export default function RootLayout({ children }) {
     <html lang="en">
       <body className="antialiased text-neutral-900">
         <Navbar />
-        {children}
+        <main className="pt-32">
+          {children}
+
+        </main>
       </body>
     </html>
   );
