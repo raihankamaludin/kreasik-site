@@ -33,7 +33,7 @@ export default function HeroSplit() {
           </div>
 
           <div className="flex items-center justify-between border-t border-black/20 pt-4 text-sm">
-            <span>Store: IKEA.co.id (in)</span>
+            <span>Store: shoope.kreasik.com (in)</span>
             <span className="text-xl">↑</span>
           </div>
         </div>

@@ -11,12 +11,13 @@ export default function Home() {
   return (
     <main>
       <HeroSplit />
+        <PromoSection/>
       <WhyChooseUs/>
       <Products/>
       <CTA/>
       <About/>
       <Contact/>
-      <PromoSection/>
+
     </main>
   );
 }

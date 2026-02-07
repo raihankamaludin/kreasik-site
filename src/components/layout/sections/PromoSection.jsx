@@ -1,53 +1,40 @@
 import Image from "next/image";
 
-export default function PromoSection() {
+export default function PromoBanner() {
   return (
-    <section className="w-full bg-[#F5E9E2] py-16">
-      <div className="mx-auto max-w-7xl px-6">
-        <div className="grid items-center gap-10 rounded-3xl bg-white p-10 shadow-sm md:grid-cols-2">
-          
-          {/* TEXT */}
-          <div>
-            <span className="inline-block rounded-full bg-[#E6B8A2] px-4 py-1 text-sm font-medium text-white">
-              Special Event
-            </span>
+    <section className="relative h-[80vh] w-full">
+      
+      {/* BACKGROUND IMAGE */}
+      <Image
+        src="/Event/banner.png"
+        alt="Promo Background"
+        fill
+        priority
+        className="object-cover"
+      />
 
-            <h2 className="mt-4 text-3xl font-semibold leading-tight">
-              Buket Spesial Valentine 💐
-            </h2>
+      {/* OVERLAY */}
+      <div className="absolute inset-0 bg-black/40" />
 
-            <p className="mt-4 text-gray-600">
-              Ekspresikan perasaanmu dengan buket bunga buatan elegan,
-              tahan lama, dan siap jadi hadiah berkesan.
-            </p>
+      {/* CONTENT */}
+      <div className="relative z-10 mx-auto flex h-full max-w-7xl items-center px-6">
+        <div className="max-w-xl text-white">
+          <h1 className="text-5xl font-bold leading-tight">
+            Promo Akhir<br />Pekan
+          </h1>
 
-            <div className="mt-6 flex gap-4">
-              <a
-                href="#produk"
-                className="rounded-xl bg-black px-6 py-3 text-white transition hover:opacity-90"
-              >
-                Lihat Produk
-              </a>
+          <p className="mt-4 text-lg text-white/90">
+            Harga spesial setiap Sabtu Minggu.
+            Temukan produk favoritmu sekarang.
+          </p>
 
-              <a
-                href="https://shopee.co.id"
-                target="_blank"
-                className="rounded-xl border border-black px-6 py-3 transition hover:bg-black hover:text-white"
-              >
-                Beli di Shopee
-              </a>
-            </div>
-          </div>
-
-          {/* IMAGE */}
-          <div className="relative h-70 w-full overflow-hidden rounded-2xl">
-            <Image
-              src="/Event/Banner Event.png"
-              alt="Promo Valentine"
-              fill
-              className="object-cover"
-            />
-          </div>
+          <a
+            href="https://shopee.co.id"
+            target="_blank"
+            className="mt-8 inline-block rounded-full bg-white px-8 py-3 font-medium text-black transition hover:scale-105"
+          >
+            Belanja Sekarang
+          </a>
         </div>
       </div>
     </section>
