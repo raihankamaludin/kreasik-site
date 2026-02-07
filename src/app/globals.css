@@ -1,26 +1,63 @@
 @import "tailwindcss";
 
+/* ============================= */
+/* BASE COLOR VARIABLES */
+/* ============================= */
 :root {
-  --background: #ffffff;
-  --foreground: #171717;
+  /* BRAND */
+  --primary: #7f2d30;
+  --primary-hover: #6b2629;
+
+  /* BACKGROUND */
+  --background: #faf7f7;
+  --surface: #ffffff;
+
+  /* NAVBAR */
+  --navbar-bg: #faf7f7;
+  --navbar-text: #2b1a1b;
+
+  /* TEXT */
+  --foreground: #2b1a1b; /* heading / main text */
+  --text-body: #4b3a3b; /* paragraph */
+  --text-muted: #8a6f71;
+  --text-cta-muted: #faeeee; /* small text / helper */
+
+  /* BORDER */
+  --border: #e6dada;
+
+  /* ACCENT (optional CTA) */
+  --accent: #d4a373;
 }
 
+/* ============================= */
+/* THEME INLINE (DESIGN TOKEN) */
+/* ============================= */
 @theme inline {
   --color-background: var(--background);
+  --color-surface: var(--surface);
+
   --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
+  --color-text-body: var(--text-body);
+  --color-text-muted: var(--text-muted);
+
+  --color-primary: var(--primary);
+  --color-primary-hover: var(--primary-hover);
+
+  --color-navbar-bg: var(--navbar-bg);
+  --color-navbar-text: var(--navbar-text);
+
+  --color-border: var(--border);
+  --color-accent: var(--accent);
+
+  --color-cta-muted: var(--text-cta-muted);
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
-}
-
+/* ============================= */
+/* BASE STYLE */
+/* ============================= */
 body {
-  background: var(--background);
-  color: var(--foreground); 
+  background: var(--color-background);
+  color: var(--color-foreground);
   font-family: Arial, Helvetica, sans-serif;
+  line-height: 1.6;
 }
