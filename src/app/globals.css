@@ -12,6 +12,11 @@
   --background: #faf7f7;
   --surface: #ffffff;
 
+  /* Cards */
+
+  --secondary: #49734f;
+  --hover-secondary: #90b295;
+
   /* NAVBAR */
   --navbar-bg: #faf7f7;
   --navbar-text: #2b1a1b;
@@ -49,6 +54,9 @@
   --color-border: var(--border);
   --color-accent: var(--accent);
 
+   --color-secondary: var(--secondary);
+   --color-hover-secondary: var(--hover-secondary);
+
   --color-cta-muted: var(--text-cta-muted);
 }
 
@@ -56,7 +64,7 @@
 /* BASE STYLE */
 /* ============================= */
 body {
-  background: var(--color-background);
+  background : var(--color-background);
   color: var(--color-foreground);
   font-family: Arial, Helvetica, sans-serif;
   line-height: 1.6;
