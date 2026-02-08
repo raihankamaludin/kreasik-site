@@ -1,6 +1,13 @@
+"use client"
+
 import Image from "next/image";
+import {ArrowRight} from "lucide-react"
+
+
 
 export default function HeroSplit() {
+
+  
   return (
     <section className="mx-auto max-w-7xl px-6 py-10">
       <div className="grid min-h-150 grid-cols-1 overflow-hidden rounded-xl lg:grid-cols-3">
@@ -22,9 +29,13 @@ export default function HeroSplit() {
         </div>
 
         {/* RIGHT CTA */}
-        <div className="flex flex-col justify-between bg-primary p-10">
-          <div>
-            <h2 className="text-3xl font-bold text-surface">Go shopping</h2>
+        <div 
+
+        onClick={() => window.open("https://shopee.co.id/?gad_source=1&gad_campaignid=1558961180&gbraid=0AAAAADPpU80Q6UtP_0MQnmaPk4oOeqjB-&gclid=Cj0KCQiAhaHMBhD2ARIsAPAU_D5u4IH2kfw02OrPIkS4X7OhCMQZAY8LqPjk1dh0SIIyCCryDwlYMF4aAjjDEALw_wcB", "_blank")}
+        
+        className="group flex flex-col justify-between  bg-primary p-10">
+          <div className="text-3xl font-bold text-surface flex gap-20 items-center mt-50">
+            <h1>Go shopping</h1> <div className="bg-foreground rounded-full w-10 h-10 flex items-center justify-center transition-color duration-300 ease-in-out group-hover:bg-primary-hover"><ArrowRight/></div>
           </div>
 
           <div className="flex items-center justify-between border-t border-black/20 pt-4 text-sm text-cta-muted">
