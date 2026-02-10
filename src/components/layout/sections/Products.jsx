@@ -12,6 +12,7 @@ export default function Products() {
             <div key={p.id} className="bg-white rounded-xl shadow-sm p-4">
               <Image src={p.image} alt="product" width={400} height={400} className="rounded-lg" />
               <h3 className="mt-4 font-medium">{p.name}</h3>
+              <p className="text-sm text-text-muted mt-5 mb-3">{p.paragraf}</p>
               <p className="text-gray-600">{p.price}</p>
               <a
                 href={p.link}
