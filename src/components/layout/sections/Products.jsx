@@ -66,6 +66,7 @@ export default function Products() {
                   rounded-xl
                   shadow-md
                   p-4
+                  flex flex-col h-full
                 "
               > 
                 <Image
@@ -87,7 +88,7 @@ export default function Products() {
                 <a
                   href={p.link}
                   target="_blank"
-                  className="block mt-4 text-center bg-[#9CAF88] text-white py-2 rounded-lg hover:bg-[#647551]"
+                  className="block mt-4 text-center bg-[#9CAF88] text-white py-2 rounded-lg hover:bg-[#647551] "
                 >
                   Beli di Shopee
                 </a>
