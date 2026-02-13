@@ -19,7 +19,7 @@ export default function ReadMore({ text }) {
     <div className="mt-3 min-h-15">
    
       <p
-        ref={textRef}
+        ref={textRef}    
         className={`text-sm text-gray-600 text-justify ${
           open ? "" : "line-clamp-1"
         }`}
