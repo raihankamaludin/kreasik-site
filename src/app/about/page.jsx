@@ -1,4 +1,6 @@
 import Image from "next/image"
+import WhyUs from "@/components/layout/sections/WhyUs"
+import CtaAbout from "@/components/layout/sections/CtaAbout"
 
 export default function AboutPage() {
   return (
@@ -51,6 +53,10 @@ Kami percaya bahwa bunga bukan sekadar hadiah, tetapi bentuk ekspresi emosi dan 
         </div>
 
       </div>
+
+  <WhyUs />
+ <CtaAbout/>
+
     </section>
   )
 }
