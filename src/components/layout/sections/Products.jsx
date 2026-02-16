@@ -1,7 +1,7 @@
 "use client";
 import { useState } from "react";
 import Image from "next/image";
-import { products } from "@/app/data/products";
+import { products } from "@/app/data/FeaturedProduct";
 import ReadMore from "@/components/layout/sections/ReadMore";
 
 export default function Products() {
