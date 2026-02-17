@@ -1,14 +1,45 @@
+import Link from "next/link";
+import Image from "next/image";
+
 export default function Navbar() {
   return (
-    <nav className="w-full  fixed z-100 bg-navbar-bg">
-      <div className="mx-auto flex max-w-7xl items-center gap-10 px-6 py-10">
-        <div className="text-xl font-bold text-primary">LOGO</div>
+    <nav className="fixed top-0 left-0 w-full z-40 bg-navbar-bg/90 backdrop-blur-md border-b border-border">
+      <div className="mx-auto flex max-w-7xl items-center justify-between px-6 py-6">
 
-        <ul className="flex gap-6 text-sm font-medium text-navbar-text">
-          <li className="cursor-pointer hover:underline">Stories</li>
-          <li className="cursor-pointer hover:underline">Jobs</li>
-          <li className="cursor-pointer hover:underline">Newsroom</li>
-          <li className="cursor-pointer hover:underline">Our business</li>
+      
+        <Link href="/" className="flex items-center gap-2">
+          <Image
+            src="/logo/logo.png"  
+            alt="Brand Logo"
+            width={120}
+            height={40}
+            priority
+            className="h-8 w-auto object-contain"
+          />
+        </Link>
+
+    
+        <ul className="hidden md:flex items-center gap-8 text-sm font-medium text-navbar-text">
+          <li>
+            <Link href="/stories" className="hover:text-primary transition">
+              Stories
+            </Link>
+          </li>
+          <li>
+            <Link href="/jobs" className="hover:text-primary transition">
+              Jobs
+            </Link>
+          </li>
+          <li>
+            <Link href="/newsroom" className="hover:text-primary transition">
+              Newsroom
+            </Link>
+          </li>
+          <li>
+            <Link href="/business" className="hover:text-primary transition">
+              Our Business
+            </Link>
+          </li>
         </ul>
       </div>
     </nav>
