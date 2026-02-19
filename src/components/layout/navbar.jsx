@@ -53,23 +53,23 @@ export default function Navbar() {
       {/* Desktop Menu */}
       <ul className="hidden md:flex items-center gap-10 text-base font-muted text-navbar-text">
         <li>
-          <Link href="/stories" className="hover:text-primary transition-colors">
-            Stories
+          <Link href="/about" className="hover:text-primary transition-colors">
+            About
           </Link>
         </li>
         <li>
-          <Link href="/jobs" className="hover:text-primary transition-colors">
-            Jobs
+          <Link href="/products" className="hover:text-primary transition-colors">
+     Products
           </Link>
         </li>
         <li>
-          <Link href="/newsroom" className="hover:text-primary transition-colors">
-            Newsroom
+          <Link href="/gallery" className="hover:text-primary transition-colors">
+          Gallery
           </Link>
         </li>
         <li>
-          <Link href="/business" className="hover:text-primary transition-colors">
-            Our Business
+          <Link href="/contact" className="hover:text-primary transition-colors">
+          Contact
           </Link>
         </li>
       </ul>
