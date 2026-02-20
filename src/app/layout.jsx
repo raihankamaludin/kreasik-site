@@ -1,5 +1,6 @@
 import "./globals.css";
 import Navbar from "@/components/layout/navbar";
+import Footer from "@/components/layout/footer";
 
 export const metadata = {
   title: "Modern Home Inspiration",
@@ -15,6 +16,7 @@ export default function RootLayout({ children }) {
           {children}
 
         </main>
+        <Footer />
       </body>
     </html>
   );

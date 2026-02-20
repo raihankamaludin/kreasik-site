@@ -38,7 +38,7 @@ export default function Products() {
   };
 
   return (
-    <section className="py-16 bg-background overflow-hidden">
+    <section id="best-seller" className="py-16 bg-background overflow-hidden">
       <div className="max-w-7xl mx-auto px-4">
         <h2 className="text-2xl md:text-3xl font-semibold text-center mb-20">
           Produk Unggulan

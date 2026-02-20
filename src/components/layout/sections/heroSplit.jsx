@@ -68,7 +68,7 @@ export default function HeroSplit() {
           onClick={() => window.open("https://shopee.co.id", "_blank")}
           className="group flex flex-col justify-between bg-primary p-8 sm:p-10 cursor-pointer"
         >
-          <div className="flex items-center justify-between">
+          <div className="flex items-center justify-between ">
             <h2 className="text-3xl font-bold text-surface">
               Go shopping
             </h2>
